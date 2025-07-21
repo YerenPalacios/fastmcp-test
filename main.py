@@ -72,7 +72,7 @@ class Form(BaseModel):
     version_end_date: str
     form_type: str
 
-
+@mcp.tool
 def create_form(form: Form) -> str:
     """Create a new form."""
     requests.post(
